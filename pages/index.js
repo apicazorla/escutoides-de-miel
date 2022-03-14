@@ -11,11 +11,13 @@ import { config } from '../config/config'
 export default function StartPage () {
   return (
     <Page>
-      <H1 style={styles.h1}>Heading H1</H1>
+      <H1 style={styles.h1}>Escutoides de miel</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
         videoUrl='https://d2ipf317wiij9u.cloudfront.net/escutoides.mp4'
+        {width=1600}
+        {heigth=900}
       />
     </Page>
   )
