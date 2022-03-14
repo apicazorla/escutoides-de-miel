@@ -11,7 +11,7 @@ import { config } from '../config/config'
 export default function StartPage () {
   return (
     <Page>
-      <H1 style={styles.h1}>Heading H1</H1>
+      <H1 style={styles.h1}>Escutoides de miel</H1>
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
