@@ -17,7 +17,7 @@ export default function StartPage () {
       <VideoPlayer
        {{ videoUrl='https://d2ipf317wiij9u.cloudfront.net/escutoides.mp4'}}
         {width=1600}
-        {heigth=900}
+        {height=900}
       />
     </Page>
   )
