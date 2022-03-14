@@ -16,8 +16,8 @@ export default function StartPage () {
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
        videoUrl='https://d2ipf317wiij9u.cloudfront.net/escutoides.mp4'
-        {width=1600}
-        {height=900}
+        {width=160}
+        {height=90}
       />
     </Page>
   )
