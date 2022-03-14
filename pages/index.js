@@ -15,7 +15,7 @@ export default function StartPage () {
       <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
-       videoUrl='https://d2ipf317wiij9u.cloudfront.net/escutoides.mp4'
+        videoUrl='https://d2ipf317wiij9u.cloudfront.net/escutoides.mp4'
       />
     </Page>
   )
