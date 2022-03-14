@@ -12,7 +12,7 @@ export default function StartPage () {
   return (
     <Page>
       <H1 style={styles.h1}>ESCUTOIDES DE MIEL</H1>
-      <Text style={styles.text}>Este es un procucto de {config.appName} </Text>
+      <Text style={styles.text}>This is {config.appName} running</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
         videoUrl='https://fisicayquimica2.s3.eu-west-3.amazonaws.com/escutoides.mp4'
