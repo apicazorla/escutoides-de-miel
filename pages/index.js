@@ -1,12 +1,18 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { StyleSheet, Text } from 'react-native'
+import { View,Text, TouchableWithoutFeedback, StyleSheet, Linking } from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
 import VideoPlayer from '../components/VideoPlayer'
 
 import { config } from '../config/config'
+
+export default class Example extends React.Component {
+  open=()=>{
+      let url = 'http://www.apicazorla.com';
+      Linking.openURL(url) 
+  }
 
 export default function StartPage () {
   return (
@@ -19,9 +25,24 @@ export default function StartPage () {
       />
       <Text style={styles.text}>Más información en</Text>
       <Text style={styles.text}>www.apicazorla.com/post/getting-started.</Text>
+
+      render() {
+        return (
+            <View style={styles.container}>
+                 <TouchableWithoutFeedback onPress={this.open}>
+                     <View style={styles.viewForText}>
+                                                 <Text> Haga clic en mí para abrir Baidu </Text>
+                     </View>
+                </TouchableWithoutFeedback>
+            </View>
+}
+
     </Page>
   )
 }
+
+
+
 
 const styles = StyleSheet.create({
   text: {
