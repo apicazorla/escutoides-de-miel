@@ -17,6 +17,7 @@ export default function StartPage () {
       <VideoPlayer
         videoUrl='https://fisicayquimica2.s3.eu-west-3.amazonaws.com/escutoides.mp4'
       />
+      <Test style={styles.text}>Más información en www.apicazorla.com/post/getting.</Test>
     </Page>
   )
 }
