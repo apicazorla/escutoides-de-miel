@@ -1,6 +1,6 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { View,Text} from 'react-native'
+import { StyleSheet,Text} from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
@@ -22,6 +22,7 @@ export default function StartPage () {
     </Page>
   )
 }
+
 const styles = StyleSheet.create({
   text: {
     fontSize: 16,
@@ -32,5 +33,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginTop: 12,
-    marginBottom: 12,
+    marginBottom: 12
+  }
   })
