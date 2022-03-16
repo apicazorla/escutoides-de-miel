@@ -1,6 +1,6 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { View,Text, TouchableWithoutFeedback, StyleSheet, Linking } from 'react-native'
+import { View,Text} from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
@@ -22,24 +22,6 @@ export default function StartPage () {
     </Page>
   )
 }
-
-export default class Example extends React.Component {
-  open=()=>{
-      let url = 'http://www.baidu.com';
-      Linking.openURL(url) 
-  }
-  render() {
-      return (
-          <View style={styles.viewFortext}>
-               <TouchableWithoutFeedback onPress={this.open}>
-                   <View style={styles.viewForText}>
-                                               <Text> Haga clic en mí para abrir Baidu </Text>
-                   </View>
-              </TouchableWithoutFeedback>
-          </View>
-
-}
-
 const styles = StyleSheet.create({
   text: {
     fontSize: 16,
@@ -50,9 +32,5 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginTop: 12,
-    marginBottom: 12
-  },
-  viewForText:{
-    justifyContent:'center',
-    alignItems:'center'
-})
+    marginBottom: 12,
+  })
