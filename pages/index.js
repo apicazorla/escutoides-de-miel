@@ -1,6 +1,6 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { StyleSheet,Text, TouchableWithoutFeedback, Linking  } from 'react-native'
+import { StyleSheet,Text} from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
@@ -21,23 +21,6 @@ export default function StartPage () {
       <Text style={styles.text}>https://www.apicazorla.com/post/getting-started.</Text>
     </Page>
   )
-}
-
-export default class Example extends React.Component {
-  open=()=>{
-      let url = 'https://www.apicazorla.com/post/getting-started';
-      Linking.openURL(url) 
-  }
-  render() {
-      return (
-          <View style={styles.container}>
-               <TouchableWithoutFeedback onPress={this.open}>
-                   <View style={styles.viewForText}>
-                                               <Text> Haga clic aquí para abrir </Text>
-                   </View>
-              </TouchableWithoutFeedback>
-          </View>
-
 }
 
 const styles = StyleSheet.create({
