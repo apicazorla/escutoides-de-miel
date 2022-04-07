@@ -18,15 +18,16 @@ export default function StartPage () {
         videoUrl='https://fisicayquimica2.s3.eu-west-3.amazonaws.com/escutoides.mp4'
       />
       <Text style={styles.text}>Más información en</Text>
-      <Text style={styles.text}>https://www.apicazorla.com/post/getting-started.</Text>
-    </Page>
-  )
-}
-
-<Text style={{color: 'blue'}}
+      <Text style={{color: 'blue'}}
       onPress={() => Linking.openURL('http://google.com')}>
   Google
 </Text>
+    </Page>
+
+  )
+}
+
+
 
 const styles = StyleSheet.create({
   text: {
