@@ -1,29 +1,12 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { View,Text, TouchableWithoutFeedback, StyleSheet, Linking} from 'react-native'
+import { StyleSheet,Text} from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
 import VideoPlayer from '../components/VideoPlayer'
 
 import { config } from '../config/config'
-
-export default class Example extends React.Component {
-  open=()=>{
-      let url = 'http://www.apicazorla.com';
-      Linking.openURL(url) 
-  }
-  render() {
-      return (
-          <View style={styles.container}>
-               <TouchableWithoutFeedback onPress={this.open}>
-                   <View style={styles.viewForText}>
-                                               <Text> Haga clic aquí para abrir al web </Text>
-                   </View>
-              </TouchableWithoutFeedback>
-          </View>
-
-}
 
 export default function StartPage () {
   return (
@@ -41,10 +24,6 @@ export default function StartPage () {
 }
 
 const styles = StyleSheet.create({
-  container: {
-      flex: 1,
-      backgroundColor:'#E5E5E5'
-  },
   text: {
     fontSize: 16,
     marginTop: 8,
@@ -55,9 +34,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 12,
     marginBottom: 12
-  },
-  viewForText:{
-    justifyContent:'center',
-    alignItems:'center'
+  }
   })
-  
