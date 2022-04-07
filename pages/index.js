@@ -1,6 +1,6 @@
 import React from 'react'
 // @generated: @expo/next-adapter@2.1.5
-import { StyleSheet,Text} from 'react-native'
+import { StyleSheet,Text, Linking} from 'react-native'
 
 import Page from '../components/page/Page'
 import { H1 } from '../components/webElements'
@@ -22,6 +22,11 @@ export default function StartPage () {
     </Page>
   )
 }
+
+<Text style={{color: 'blue'}}
+      onPress={() => Linking.openURL('http://google.com')}>
+  Google
+</Text>
 
 const styles = StyleSheet.create({
   text: {
