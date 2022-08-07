@@ -11,11 +11,7 @@ import { config } from '../config/config'
 export default function StartPage () {
   return (
     <Page>
-<<<<<<< HEAD
-      <H1 style={styles.h1}>Escutoides  de miel</H1>
-=======
-      <H1 style={styles.h1}>Escutoides de miel</H1>
->>>>>>> 154fb1e6765cba679a3d38a5f537702c2b9c306e
+      <H1 style={styles.h1}>Escutoides  miel</H1>
       <Text style={styles.text}>Es un producto de {config.appName}</Text>
       <Text style={styles.text}>{config.appTagline}</Text>
       <VideoPlayer
@@ -23,7 +19,7 @@ export default function StartPage () {
       />
       <Text style={styles.text}>Más información en</Text>
       <Text style={{color: 'blue'}}
-      onPress={() => Linking.openURL('http://nomenclaturaquimica.com/contact')}>
+      onPress={() => Linking.openURL('http://apicazorla.com/post/getting-started')}>
   Apicazorla
 </Text>
     </Page>
